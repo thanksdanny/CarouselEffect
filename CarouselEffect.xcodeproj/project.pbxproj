@@ -15,6 +15,7 @@
 		FD0971DC1C857F0B00FDB89A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971DB1C857F0B00FDB89A /* HomeViewController.m */; };
 		FD0971E21C85801C00FDB89A /* Interest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971E11C85801C00FDB89A /* Interest.m */; };
 		FD0971E51C8581B600FDB89A /* InterestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971E41C8581B600FDB89A /* InterestCollectionViewCell.m */; };
+		FD0EC5DF1C85DF0D00354E9F /* IntrestList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD0EC5DE1C85DF0D00354E9F /* IntrestList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FD0971E11C85801C00FDB89A /* Interest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interest.m; sourceTree = "<group>"; };
 		FD0971E31C8581B600FDB89A /* InterestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestCollectionViewCell.h; sourceTree = "<group>"; };
 		FD0971E41C8581B600FDB89A /* InterestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestCollectionViewCell.m; sourceTree = "<group>"; };
+		FD0EC5DE1C85DF0D00354E9F /* IntrestList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IntrestList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				FD0971E41C8581B600FDB89A /* InterestCollectionViewCell.m */,
 				FD0971E01C85801C00FDB89A /* Interest.h */,
 				FD0971E11C85801C00FDB89A /* Interest.m */,
+				FD0EC5DE1C85DF0D00354E9F /* IntrestList.plist */,
 				FD0971CF1C8548FC00FDB89A /* Assets.xcassets */,
 				FD0971D11C8548FC00FDB89A /* LaunchScreen.storyboard */,
 				FD0971C31C8548FC00FDB89A /* Supporting Files */,
@@ -146,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0EC5DF1C85DF0D00354E9F /* IntrestList.plist in Resources */,
 				FD0971D31C8548FC00FDB89A /* LaunchScreen.storyboard in Resources */,
 				FD0971D01C8548FC00FDB89A /* Assets.xcassets in Resources */,
 				FD0971CE1C8548FC00FDB89A /* Main.storyboard in Resources */,

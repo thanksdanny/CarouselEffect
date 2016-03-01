@@ -6,6 +6,13 @@
 //  Copyright © 2016 thanksdanny. All rights reserved.
 //
 
+/*
+ 1/ 隐藏statusbar
+ 2/ 设置数据源
+ 3/ 调整UI
+ 
+ */
+
 #import "HomeViewController.h"
 #import "InterestCollectionViewCell.h"
 
@@ -18,17 +25,22 @@
 @end
 
 @implementation HomeViewController
+- (NSArray *)data {
+    return [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"IntrestList" ofType:@"plist"]];
+}
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 10; // xx.count
+    return [[self data] count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     InterestCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"InterestCell" forIndexPath:indexPath];
-    cell.featuredImageView.image = [UIImage imageNamed:@"bodyline"];
+    cell.featuredImageView.image = [UIImage imageNamed:[[self data][indexPath.row] objectForKey:@"featuredImage"]];
+    cell.interestTitleLabel.text = [NSString stringWithFormat:@"%@", [[self data][indexPath.row] objectForKey:@"title"]];
     
     return cell;
 }
