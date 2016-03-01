@@ -7,16 +7,36 @@
 //
 
 #import "HomeViewController.h"
+#import "InterestCollectionViewCell.h"
 
-@interface HomeViewController ()
+@interface HomeViewController () <UICollectionViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
 
 @end
 
 @implementation HomeViewController
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 10; // xx.count
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    InterestCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"InterestCell" forIndexPath:indexPath];
+    cell.featuredImageView.image = [UIImage imageNamed:@"bodyline"];
+    
+    return cell;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.collectionView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {

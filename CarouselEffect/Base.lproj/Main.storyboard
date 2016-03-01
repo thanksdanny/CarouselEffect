@@ -29,7 +29,7 @@
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zaJ-Oj-gCm">
                                             <rect key="frame" x="0.0" y="87" width="600" height="426"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="6mL-Ub-ML8">
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="6mL-Ub-ML8">
                                                 <size key="itemSize" width="300" height="400"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -37,7 +37,7 @@
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InterestCell" id="Kkn-rL-K5r" userLabel="IntrestCell" customClass="InterestCollectionViewCell">
-                                                    <rect key="frame" x="150" y="0.0" width="300" height="400"/>
+                                                    <rect key="frame" x="20" y="13" width="300" height="400"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
@@ -55,7 +55,7 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Love your new hair style" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLs-wA-9dz" userLabel="Interest Title">
                                                                             <rect key="frame" x="13" y="11" width="274" height="40"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
@@ -65,6 +65,10 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </view>
+                                                    <connections>
+                                                        <outlet property="featuredImageView" destination="SCy-d7-NR0" id="rjy-qg-H1C"/>
+                                                        <outlet property="interestTitleLabel" destination="WLs-wA-9dz" id="pTg-rk-pTg"/>
+                                                    </connections>
                                                 </collectionViewCell>
                                             </cells>
                                         </collectionView>
@@ -85,6 +89,10 @@
                             <constraint firstItem="nj9-sT-THm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s5g-ak-djc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="nj9-sT-THm" id="QjY-2N-N9g"/>
+                        <outlet property="collectionView" destination="zaJ-Oj-gCm" id="3rg-Jg-VkB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

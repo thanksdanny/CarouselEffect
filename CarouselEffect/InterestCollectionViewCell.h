@@ -10,4 +10,7 @@
 
 @interface InterestCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *featuredImageView;
+@property (weak, nonatomic) IBOutlet UILabel *interestTitleLabel;
+
 @end

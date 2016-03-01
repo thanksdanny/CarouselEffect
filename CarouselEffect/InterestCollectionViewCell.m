@@ -8,6 +8,10 @@
 
 #import "InterestCollectionViewCell.h"
 
+@interface InterestCollectionViewCell ()
+
+@end
+
 @implementation InterestCollectionViewCell
 
 @end
