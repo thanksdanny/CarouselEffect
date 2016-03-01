@@ -14,4 +14,11 @@
 
 @implementation InterestCollectionViewCell
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    self.layer.cornerRadius = 5.0;
+    self.clipsToBounds = YES;
+}
+
 @end
