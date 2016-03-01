@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  InterestCollectionViewCell.h
 //  CarouselEffect
 //
 //  Created by Danny Ho on 3/1/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface InterestCollectionViewCell : UICollectionViewCell
 
 @end
-

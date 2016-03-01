@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		FD0971C51C8548FC00FDB89A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971C41C8548FC00FDB89A /* main.m */; };
 		FD0971C81C8548FC00FDB89A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971C71C8548FC00FDB89A /* AppDelegate.m */; };
-		FD0971CB1C8548FC00FDB89A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971CA1C8548FC00FDB89A /* ViewController.m */; };
 		FD0971CE1C8548FC00FDB89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0971CC1C8548FC00FDB89A /* Main.storyboard */; };
 		FD0971D01C8548FC00FDB89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0971CF1C8548FC00FDB89A /* Assets.xcassets */; };
 		FD0971D31C8548FC00FDB89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0971D11C8548FC00FDB89A /* LaunchScreen.storyboard */; };
+		FD0971DC1C857F0B00FDB89A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971DB1C857F0B00FDB89A /* HomeViewController.m */; };
+		FD0971E21C85801C00FDB89A /* Interest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971E11C85801C00FDB89A /* Interest.m */; };
+		FD0971E51C8581B600FDB89A /* InterestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971E41C8581B600FDB89A /* InterestCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,16 @@
 		FD0971C41C8548FC00FDB89A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD0971C61C8548FC00FDB89A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD0971C71C8548FC00FDB89A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD0971C91C8548FC00FDB89A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FD0971CA1C8548FC00FDB89A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FD0971CD1C8548FC00FDB89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD0971CF1C8548FC00FDB89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0971D21C8548FC00FDB89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD0971D41C8548FC00FDB89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0971DA1C857F0B00FDB89A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FD0971DB1C857F0B00FDB89A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FD0971E01C85801C00FDB89A /* Interest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interest.h; sourceTree = "<group>"; };
+		FD0971E11C85801C00FDB89A /* Interest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interest.m; sourceTree = "<group>"; };
+		FD0971E31C8581B600FDB89A /* InterestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestCollectionViewCell.h; sourceTree = "<group>"; };
+		FD0971E41C8581B600FDB89A /* InterestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,15 @@
 			children = (
 				FD0971C61C8548FC00FDB89A /* AppDelegate.h */,
 				FD0971C71C8548FC00FDB89A /* AppDelegate.m */,
-				FD0971C91C8548FC00FDB89A /* ViewController.h */,
-				FD0971CA1C8548FC00FDB89A /* ViewController.m */,
 				FD0971CC1C8548FC00FDB89A /* Main.storyboard */,
+				FD0971DA1C857F0B00FDB89A /* HomeViewController.h */,
+				FD0971DB1C857F0B00FDB89A /* HomeViewController.m */,
+				FD0971E31C8581B600FDB89A /* InterestCollectionViewCell.h */,
+				FD0971E41C8581B600FDB89A /* InterestCollectionViewCell.m */,
+				FD0971E01C85801C00FDB89A /* Interest.h */,
+				FD0971E11C85801C00FDB89A /* Interest.m */,
 				FD0971CF1C8548FC00FDB89A /* Assets.xcassets */,
 				FD0971D11C8548FC00FDB89A /* LaunchScreen.storyboard */,
-				FD0971D41C8548FC00FDB89A /* Info.plist */,
 				FD0971C31C8548FC00FDB89A /* Supporting Files */,
 			);
 			path = CarouselEffect;
@@ -74,6 +83,7 @@
 		FD0971C31C8548FC00FDB89A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD0971D41C8548FC00FDB89A /* Info.plist */,
 				FD0971C41C8548FC00FDB89A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -149,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0971CB1C8548FC00FDB89A /* ViewController.m in Sources */,
 				FD0971C81C8548FC00FDB89A /* AppDelegate.m in Sources */,
+				FD0971E21C85801C00FDB89A /* Interest.m in Sources */,
+				FD0971E51C8581B600FDB89A /* InterestCollectionViewCell.m in Sources */,
 				FD0971C51C8548FC00FDB89A /* main.m in Sources */,
+				FD0971DC1C857F0B00FDB89A /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +310,7 @@
 				FD0971D91C8548FC00FDB89A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
